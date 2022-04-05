@@ -1,8 +1,8 @@
 <template>
   <div class="">
     <TopNav />
-    <div class="px-20 w-full flex flex-wrap">
-      <div v-for="(arr, index) in subArrays" :key="index" class="w-1/5">
+    <div class="px-2 w-full flex flex-wrap">
+      <div v-for="(arr, index) in subArrays" :key="index" class="w-5/5 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
         <div v-for="(card, i) in arr" :key="i" class="w-full">
           <div class="w-full p-2">
             <Card :src="`${card.src}`" :board="`${card.recommended}`" class="w-full h-full"/>
